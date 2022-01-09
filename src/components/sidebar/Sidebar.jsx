@@ -1,18 +1,9 @@
-import React from 'react'
-import './_sidebar.scss'
-
-import {
-   MdSubscriptions,
-   MdExitToApp,
-   MdThumbUp,
-   MdHistory,
-   MdLibraryBooks,
-   MdHome,
-   MdSentimentDissatisfied,
-} from 'react-icons/md'
-import { useDispatch } from 'react-redux'
-import { log_out } from '../../redux/actions/auth.action'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './_sidebar.scss';
+import { MdSubscriptions, MdExitToApp, MdThumbUp, MdHistory, MdLibraryBooks, MdHome, MdSentimentDissatisfied } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
+import { log_out } from '../../redux/actions/auth.action';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ sidebar, handleToggleSidebar }) => {
    const dispatch = useDispatch()
